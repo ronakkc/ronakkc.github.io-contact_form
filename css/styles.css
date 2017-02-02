@@ -1,0 +1,372 @@
+/*-- ========================MEYER RESET ==========================*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/*==============================CLEARFIX FOR ENTIRE CSS===============================*/
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.clearfix {
+    display: inline-block;
+}
+/* start commented backslash hack \*/
+
+* html .clearfix {
+    height: 1%;
+}
+.clearfix {
+    display: block;
+}
+/*==============================CLEARFIX FOR ENTIRE CSS===============================*/
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.clearfix {
+    display: inline-block;
+}
+/* start commented backslash hack \*/
+
+* html .clearfix {
+    height: 1%;
+}
+.clearfix {
+    display: block;
+}
+/* close commented backslash hack */
+/*==================DEFINING FONTS=======================*/
+
+@font-face {
+    font-family: samarkan;
+    src: url(../fonts/samarkan.ttf);
+}
+@font-face {
+    font-family: splash;
+    src: url(../fonts/splash_regularr.ttf);
+}
+@font-face {
+    font-family: bodebeck;
+    src: url(../fonts/bodeback_bold_regular.ttf);
+}
+@font-face {
+    font-family: phrastic;
+    src: url(../fonts/phrastic_medium_regular.ttf);
+}
+
+/*=====================DEFINING MAIN CONTENT======================*/
+
+main {
+    margin: 0 auto;
+    align-items: center;
+	
+}
+
+/*==MAIN BACKGROUND==*/
+
+.poster {
+    width: 1440px;
+    height: 900px;
+    align-items: center;
+    align-content: center;
+    display: block;
+	float: left;
+	background: #f4efdb;
+	position: absolute;
+    z-index: -1;
+	left: 100px;
+	top: 100px;
+	
+   
+}
+
+
+
+
+/*====BOX WITH BORDER ============*/
+
+.box1 {
+    border: 15px solid #153D44;
+	background: #f4efdb; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#ff3434, #fcd795); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#ff3434, #fcd795); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#ff3434, #fcd795); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#ff3434, #fcd795); /* Standard syntax (must be last) */
+    display: inline-block;
+	float: left;
+    width: 1015px;
+    height: 730px;
+    position: relative;
+    top: 75px;
+    left: 205px;
+    z-index: 0;
+}
+
+/*================BOX CONTAINING TEXT====================*/
+
+.box2 {
+    width: 540px;
+    height: 335px;
+    background-color: #153D44;
+    position: relative;
+    z-index: 2;
+    left: 245px;
+    top: 15px;
+    display: inline-block;
+    box-shadow: 0px 15px 60px 20px #05181c;
+    border-radius: 15px;
+}
+
+
+/*AIRLINE NAME AND LOGO*/
+.airline {
+    display: block;
+    margin: 0 auto;
+    max-width: 370px;
+    position: relative;
+    top: 30px;
+    max-height: 125px;    
+    padding-top: 5px;
+}
+
+/*AIRLINE NAME FIRST LETTER*/
+.text1-1 {
+    font-family: bodebeck;
+    font-size: 58.5pt;
+    color: #0071BC;
+    z-index: 3;
+    position: relative;
+    /*top: 100px;
+	left: 575px;*/
+    display: inline-block;
+    float: left;
+    vertical-align: top;
+}
+
+/*AIRLINE NAME REMAINING LETTERS */
+.text1-2 {
+    font-family: bodebeck;
+    font-size: 40.5pt;
+    color: #0071BC;
+    z-index: 3;
+    position: relative;
+    /*top: 100px;
+	left: 575px;*/
+    display: inline-block;
+    float: left;
+    padding-top: 2px;
+    padding-right: 7px;
+}
+
+/*AIRLINE LOGO*/
+.logo img {
+    width: 52px;
+    height: 52px;
+    z-index: 3;
+    /*left: 890px;
+	top: 95px;*/
+    
+    display: inline-block;;
+    float: left;
+}
+
+/* "INCREDIBLE SIGHTS, SOUNDS, TASTES" */ 
+.text2 {
+    font-family: splash;
+    color: #F7931E;
+    font-size: 26px;
+    position: relative;
+    top: 40px;
+    /*left: 570px;*/
+    
+    z-index: 3;
+    text-align: center;
+}
+
+/*"INCREDIBLE INDIA"*/
+.text3 {
+    font-family: samarkan;
+    color: #ED1C24;
+    font-size: 36pt;
+    z-index: 3;
+    position: relative;
+    top: 55px;
+    /*left: 585px;*/
+    
+    text-align: center;
+}
+
+/*"TAKEOFF DEALS........."*/
+.text4 {
+    font-family: phrastic;
+    font-size: 18px;
+    color: #F15A24;
+    position: relative;
+    /*left: 432px;*/
+    
+    top: 70px;
+    z-index: 3;
+    text-align: center;
+}
+
+/*SKYLINE IMAGE OF MONUMENTS*/
+.skyline img {
+    
+    width: 1190px;
+    height: 255px;
+    position: absolute;
+	z-index: 5;
+	top: 500px;
+	left: 130px;
+    
+    
+    
+}
+
+/*BACKGROUND PATTERN/DESIGN */
+.splash img {
+    width: 1350px;
+    height: 430px;
+    position: absolute;
+    z-index: 2;
+    left: 45px;
+    top: 430px;
+	opacity: 0.8;
+}
